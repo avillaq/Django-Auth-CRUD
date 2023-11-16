@@ -95,7 +95,7 @@ DATABASES = {
 DATABASES = {
     'default': dj_database_url.config(
         
-        default=os.environ.get('DATABASE_URL'),
+       default='postgresql://postgres:postgres@localhost:5432/mysite',
         conn_max_age=600
     )
 }
